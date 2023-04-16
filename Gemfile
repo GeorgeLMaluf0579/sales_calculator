@@ -1,3 +1,6 @@
 source "http://rubygems.org"
 
-gem 'rspec'
+group :development, :test do
+  gem 'factory_bot'
+  gem 'rspec'
+end

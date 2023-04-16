@@ -6,7 +6,7 @@ describe TaxCalculator do
     @calculator = TaxCalculator.new(0.10, 0.05)
   end
 
-  it 'should not have taxes' do
+  it 'should not have taxes in case of local exception' do
     expect(@calculator.calculate_tax(10, false, true)).to eq(0)
   end
   

@@ -6,7 +6,7 @@ class TaxCalculator
     @import_tax = import_tax
   end
 
-  def calculate_tax(prince, imported, tax_exempt)
+  def calculate_tax(price, imported, tax_exempt)
     tax = 0
     tax += @base_tax unless tax_exempt
     tax += @import_tax if imported
