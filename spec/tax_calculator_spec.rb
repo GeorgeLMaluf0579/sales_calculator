@@ -19,6 +19,6 @@ describe TaxCalculator do
   end
 
   it 'should have both based and imported tax' do
-    expect(@calculator.calculate_tax(10, true, false)).to eq(1.55)
+    expect(@calculator.calculate_tax(10, true, false)).to eq(0.15e1)
   end
 end

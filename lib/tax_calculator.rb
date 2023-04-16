@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'bigdecimal'
+
 class TaxCalculator
   def initialize(base_tax, import_tax)
     @base_tax = base_tax
@@ -15,7 +17,8 @@ class TaxCalculator
 
   private
 
-  def round_up(value, step = 0.05)
-    (value * (1.0 / step)).ceil / (1.0 / step)
+  def round_up(value)
+    round_factor = BigDecimal('1')/BigDecimal('0.05')
+    (value * round_factor).ceil/round_factor
   end
 end
