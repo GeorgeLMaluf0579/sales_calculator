@@ -31,3 +31,8 @@ ruby main.rb input1.txt
 2. You can use the any name of files listed on inputs folder
 
 # Running Tests
+1. On the application folder, type the command:
+
+```
+bundle exec rspec
+```
