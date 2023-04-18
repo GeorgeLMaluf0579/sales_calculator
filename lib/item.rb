@@ -19,6 +19,6 @@ class Item
   end
 
   def total_price
-    (price * quantity) + sales_tax
+    (price + sales_tax) * quantity
   end
 end
